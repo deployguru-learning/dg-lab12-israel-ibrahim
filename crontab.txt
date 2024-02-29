@@ -1,0 +1,10 @@
+# Crontab File for Automated Backup and Notification
+
+# Schedule:
+# Run the backup_and_notification.py script twice a day, at 12:00 AM (midnight) and 12:00 PM (noon).
+
+# Command:
+# The script is executed using the Python 3 interpreter located at /usr/bin/python3.
+# Replace '/home/ec2-user/environment/backup_and_notification.py' with the actual path to your Python script.
+
+0 0,12 * * * /usr/bin/python3 /home/ec2-user/environment/backup_and_notification.py
